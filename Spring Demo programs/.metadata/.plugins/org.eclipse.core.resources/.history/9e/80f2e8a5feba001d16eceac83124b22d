@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Configuring DEPENDANT bean - For loading and creating object of Dependent class -->
+	<bean id="date" class="java.util.Date" />
+
+	<!-- Configuring Target bean - For Loading and creating object of Target class -->
+	<bean id="wmg" class="in.ineuron.bean.WishMessageGenerator">
+
+		<!-- For Performing dependency injection - Setter injection inside Target bean -->
+		<property name="dt" ref="date"></property>
+	</bean>
+
+</beans>

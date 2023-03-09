@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="studentBean" class="com.durgasoft.beans.Student">
+		<property name="sid" value="INFY1182782" />
+		<property name="sname" value="Safvan" />
+
+		<!-- Injecting List of favorite Footballers -->
+		<property name="favFootballers">
+			<list>
+				<value>Ozil</value>
+				<value>Ronaldo</value>
+				<value>Kante</value>
+				<value>Zyech</value>
+				<value>Jamal Musiala</value>
+			</list>
+		</property>
+
+	</bean>
+
+</beans>
+
+<beans>
+	<bean id="---" class="--">
+		<property name="--">
+			<set>
+				<value>value1</value>
+				<value>value2</value>
+				----
+				----
+			</set>
+		</property>
+	</bean>
+</beans> 

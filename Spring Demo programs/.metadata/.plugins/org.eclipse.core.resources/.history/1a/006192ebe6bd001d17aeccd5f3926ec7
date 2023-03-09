@@ -1,0 +1,27 @@
+package com.durgasoft.beans;
+
+public class Student
+{
+	private String sname;
+
+	private Ma
+
+	// constructor
+	public Student()
+	{}
+
+	public void setSname(String sname)
+	{
+		this.sname = sname;
+	}
+
+	public void getStudentDetails()
+	{
+		System.out.println("Student Details");
+		System.out.println("-------------------------");
+		System.out.println("sname      :" + sname);
+		System.out.println("*********Student Courses***********");
+
+	}
+
+}

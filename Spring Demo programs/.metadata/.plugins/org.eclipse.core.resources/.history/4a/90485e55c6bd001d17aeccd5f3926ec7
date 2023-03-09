@@ -1,0 +1,8 @@
+package com.durgasoft.beans;
+
+public class Address
+{
+	private String flatNo;
+	private String city;
+	private String pinCode
+}

@@ -1,0 +1,18 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class ClientApp
+{
+	public static void main(String[] args)
+	{
+		// using the FileSystemResource to locate the configuration file
+		FileSystemResource fileSystemResource = new FileSystemResource("./src/applictaionCOntext.xml");
+
+		// Creating an IOC container
+		XmlBeanFactory factory = new XmlBeanFactory(fileSystemResource);
+		
+		
+	}
+}

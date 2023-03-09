@@ -1,0 +1,12 @@
+package com.durgasoft.beans;
+
+public class Branch
+{
+	private Student student;
+
+	public Branch(Student student)
+	{
+		this.student = student;
+	}
+
+}

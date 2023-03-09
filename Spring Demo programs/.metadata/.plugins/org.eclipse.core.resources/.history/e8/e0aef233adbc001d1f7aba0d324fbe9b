@@ -1,0 +1,6 @@
+package in.ineuron.bean;
+
+public class WishMessageGenerator
+{
+	private Date
+}

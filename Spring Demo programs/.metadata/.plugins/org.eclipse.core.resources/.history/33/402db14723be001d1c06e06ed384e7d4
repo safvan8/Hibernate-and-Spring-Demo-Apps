@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="studentBean" class="com.durgasoft.beans.Student">
+		<property name="sname" value="Safvan" />
+
+		<!-- Injecting Properties -->
+		<property name="courseAndCost">
+			<props>
+				<prop key="Core java">1000</prop>
+				<prop key="Advanced Java">1500</prop>
+				<prop key="JDBC+Hibernate">2000</prop>
+				<prop key="Spring And SpringBoot">5000</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
+

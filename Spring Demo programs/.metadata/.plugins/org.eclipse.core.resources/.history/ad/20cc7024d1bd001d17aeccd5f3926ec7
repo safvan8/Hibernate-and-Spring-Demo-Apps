@@ -1,0 +1,39 @@
+package com.durgasoft.beans;
+
+// Target class
+public class Student
+{
+	private String sid;
+	private String sname;
+	// Has A Varaible
+	private Address address;
+
+	public void setSid(String sid)
+	{
+		this.sid = sid;
+	}
+
+	public void setSname(String sname)
+	{
+		this.sname = sname;
+	}
+
+	public void setAddress(Address address)
+	{
+		this.address = address;
+	}
+
+	public void getStudentDetails()
+	{
+		System.out.println("Student Details");
+		System.out.println("-------------------------");
+		System.out.println("Sid        :" + sid);
+		System.out.println("sname      :" + sname);
+		System.out.println("Address Details");
+		System.out.println("****************************");
+		System.out.println("Flat Number:" + address.getFlatNo());
+		System.out.println("City       :" + address.getCity());
+		System.out.println("Pin code   :" + address.getPinCode());
+	}
+
+}

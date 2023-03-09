@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="addressBean" class="com.durgasoft.beans.Address">
+		<property name="flatNo" value="TT123" />
+		<property name="city" value="PMNA" />
+		<property name="pinCode" value="679344" />
+	</bean>
+
+	<bean id="studentBean" class="com.durgasoft.beans.Student">
+		<property name="sid" value="INFY1182782" />
+		<property name="sname" value="Safvan" />
+		<property name="address" ref="addressBean" />
+	</bean>
+
+</beans>
+
+

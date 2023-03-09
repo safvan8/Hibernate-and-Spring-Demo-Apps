@@ -1,0 +1,11 @@
+package in.ineuron.main;
+
+import org.springframework.core.io.FileSystemResource;
+
+public class ClientApp
+{
+	public static void main(String[] args)
+	{
+		new FileSystemResource(null)
+	}
+}

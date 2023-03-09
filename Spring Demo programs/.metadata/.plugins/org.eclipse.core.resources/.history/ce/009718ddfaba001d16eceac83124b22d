@@ -1,0 +1,15 @@
+package in.ineuron.bean;
+
+import java.util.Date;
+
+//Target class-----> UserDefined
+public class WishMessageGenerator
+{
+	// Dependent class ---> Predefined
+	private Date date;
+	
+	static {
+		
+	}
+}
+	

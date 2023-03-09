@@ -1,0 +1,25 @@
+package in.ineuron.main;
+
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
+
+import in.ineuron.bean.Person;
+
+public class ClientApp
+{
+	public static void main(String[] args)
+	{
+		DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
+
+		// n represents the number of bean definitions that were loaded from the XML
+		// configuration file applicationContext.xml.
+		int n = reader.loadBeanDefinitions("in/ineuron/resources/applicationContext.xml");
+
+		Person person = beanFactory.getBean("personThorughConstructor", Person.class);
+		System.out.println(person);
+
+		System.out.println("No. Of beanDefinitions Loaded : " + n);
+	}
+}

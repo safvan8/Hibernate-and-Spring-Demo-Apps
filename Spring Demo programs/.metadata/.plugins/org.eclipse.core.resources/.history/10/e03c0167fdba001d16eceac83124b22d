@@ -1,0 +1,17 @@
+package in.ineuron.bean;
+
+import java.io.File;
+
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+public class TestApp
+{
+	public static void main(String[] args)
+	{
+		//using the FileSystemResource to locate the configuration file
+		FileSystemResource resource = new FileSystemResource(new File("./src/applicationContext.xml"));
+
+		XmlBeanFactory factory = new XmlBeanFactory(resource);
+	}
+}

@@ -1,0 +1,9 @@
+package in.ineuron.bean;
+
+public class WishMessageGenerator
+{
+	public static void main(String[] args)
+	{
+		
+	}
+}

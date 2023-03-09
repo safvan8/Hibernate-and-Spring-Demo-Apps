@@ -1,0 +1,34 @@
+package in.ineuron.bean;
+
+import java.util.Date;
+
+//Target class-----> UserDefined
+public class WishMessageGenerator
+{
+	// HAS-A relationship
+	// Dependent class ---> Predefined
+	private Date date;
+
+	static
+	{
+		System.out.println("WishMessageGenerator.class file is loading........");
+	}
+
+	// cnstructor for constructor injection
+	public WishMessageGenerator(Date date)
+	{
+		System.out.println("Constructo injection is happening to inject Date object::" + date);
+		this.date = date;
+	}
+
+	// Business Logic
+	public void generateWishMessage(String name)
+	{
+		int hours = date.getHours();
+
+		if (hours <= 12)
+			System.out.println("Good morining :: " + name);
+		else
+			System.err.println("have a Great day ahead::" + name);
+	}
+}
