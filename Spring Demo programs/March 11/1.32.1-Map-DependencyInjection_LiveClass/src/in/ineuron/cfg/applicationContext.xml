@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Creating Depdenedent Object -->
+	<bean id="sysDate" class="java.util.Date" />
+
+	<!-- Creating Dependent Object by Setter injection -->
+	<bean id="dobDate" class="java.util.Date">
+		<property name="year" value="93" />
+		<property name="month" value="0" />
+		<property name="date" value="03" />
+	</bean>
+
+	<!-- Injecting dependent object to target -->
+	<bean id='university' class='in.ineuron.bean.UniversityInfo'>
+		<property name="facultyDetails">
+			
+			<!-- Map Injection - premetives through setters -->
+			<map key-type="java.lang.Integer" value-type="java.lang.String">
+				<entry>
+					<key> <value>10</value> </key>
+					<value>sachin</value>
+				</entry>
+				
+				<entry key="18" value='kohli' />
+				<entry key="7" value='dhoni' />
+			</map>
+		</property>
+
+		<property name="dateInfo">
+			
+			<map key-type="java.lang.String" value-type="java.util.Date">
+				<entry>
+					<key>
+						<value>toDay</value>
+					</key>
+					<ref bean='sysDate' />
+				</entry>
+				<entry key="dob" value-ref="dobDate" />	
+			</map>
+		</property>
+
+		<property name="technologies">
+			<props>
+				<prop key="CoreJava">Nitin</prop>
+				<prop key="JEE">Hyder</prop>
+				<prop key="Spring">NavinReddy</prop>
+			</props>
+		</property>
+
+
+
+	</bean>
+</beans>
+
+
