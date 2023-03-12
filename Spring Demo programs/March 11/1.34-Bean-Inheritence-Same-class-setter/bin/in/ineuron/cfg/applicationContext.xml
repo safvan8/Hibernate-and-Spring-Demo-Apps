@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id='baseCar' class="in.ineuron.bean.MyCar" abstract="true">
+		<property name="company" value='BMW' />
+		<property name="model" value='M4Comeptetion' />
+	</bean>
+
+	<bean id='car1' class='in.ineuron.bean.MyCar' parent="baseCar">
+		<property name="owner" value='sachin' />
+		<property name="color" value='White' />
+	</bean>
+
+	<bean id='car2' class='in.ineuron.bean.MyCar' parent="baseCar">
+		<property name="color" value='yellow' />
+		<property name="owner" value='dhoni' />
+
+	</bean>
+</beans>
