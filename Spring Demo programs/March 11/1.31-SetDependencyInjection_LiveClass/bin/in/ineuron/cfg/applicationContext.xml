@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Creating Depdenedent Object -->
+	<bean id="sysDate" class="java.util.Date" />
+
+	<!-- Creating Dependent Object by Setter injection -->
+	<bean id="dobDate" class="java.util.Date">
+		<property name="year" value="93" />
+		<property name="month" value="0" />
+		<property name="date" value="03" />
+	</bean>
+
+
+	<!-- Injectin dependent Object to Target -->
+	<bean id='cinfo' class='in.ineuron.bean.ContactsInfo'>
+
+		<!-- Set Injection of premitives via constructor -->
+		<constructor-arg name="phoneNumbers">
+			<set value-type="java.lang.String">
+				<value>9999999999</value>
+				<value>8888888888</value>
+				<value>7777777777</value>
+			</set>
+		</constructor-arg>
+
+		<!-- Set Injection of Object type values via constructor -->
+		<constructor-arg name='dates'>
+			<set value-type="java.util.Date">
+				<ref bean='sysDate' />
+				<ref bean='dobDate' />
+			</set>
+		</constructor-arg>
+	</bean>
+
+</beans>
+
+
