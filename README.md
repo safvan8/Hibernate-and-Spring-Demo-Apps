@@ -4,8 +4,8 @@ This repository contains demo programs for Hibernate and Spring, written in Java
 
 ## Contents
 
-* [HibernateDemos](./HibernateDemos/README.md) - This directory contains demo programs for Hibernate.
-* [SpringDemos](./SpringDemos/README.md) - This directory contains demo programs for Spring.
+* [HibernateDemos](https://github.com/safvan8/Hibernate-and-Spring-Demo-Programs/tree/main/Hibernate%20Sample%20Projects) - This directory contains demo programs for Hibernate.
+* [SpringDemos](https://github.com/safvan8/Hibernate-and-Spring-Demo-Programs/tree/main/Spring%20Demo%20programs) - This directory contains demo programs for Spring.
 
 ## Getting Started
 
