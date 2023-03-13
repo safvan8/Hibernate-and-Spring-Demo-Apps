@@ -1,0 +1,33 @@
+package in.ineuron.main;
+
+import org.hibernate.HibernateError;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class SelectAll
+{
+	public static void main(String[] args)
+	{
+		// creating Configuration Object
+		Configuration config = new Configuration();
+
+		// to encapsulate all data from configuration file to config object
+		config.configure("/in/ineuron/resources/hibernate.cfg.xml");
+
+		// to load drivers and establish connection
+		SessionFactory sessionFactory = config.buildSessionFactory();
+
+		// like preparing Statement object
+		org.hibernate.Session session = sessionFactory.openSession();
+
+		try
+		{
+
+		} catch (HibernateError e)
+		{
+			// TODO: handle exception
+		}
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;InsurancePolicyDaoImpl.java&apos; to &apos;9_Named_Queries/src/in.ineuron.dao&apos;&#x0D;&#x0A;- Original project: &apos;8_Bulk_Insert_Operation&apos;&#x0D;&#x0A;- Destination element: &apos;9_Named_Queries/src/in.ineuron.dao&apos;&#x0D;&#x0A;- Original element: &apos;in.ineuron.dao.InsurancePolicyDaoImpl.java&apos;" description="Copy compilation unit" destination="=9_Named_Queries/src&lt;in.ineuron.dao" element1="/src&lt;in.ineuron.dao{InsurancePolicyDaoImpl.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1677299854209" units="1" version="1.0"/>
+</session>

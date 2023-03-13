@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;9.10_HBN-OneToMany-mapping_live_class4&apos; to &apos;9.91_HBN-OneToMany-mapping_live_class4&apos;&#x0D;&#x0A;- Original element: &apos;9.10_HBN-OneToMany-mapping_live_class4&apos;&#x0D;&#x0A;- Renamed element: &apos;9.10_HBN-OneToMany-mapping_live_class4&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;9.10_HBN-OneToMany-mapping_live_class4&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=9.10_HBN-OneToMany-mapping_live_class4" name="9.91_HBN-OneToMany-mapping_live_class4" references="true" stamp="1677392454045" version="1.0"/>
+</session>

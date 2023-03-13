@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;9.92_HBN-ManyToOne-mapping_live_class5&apos;&#x0D;&#x0A;- Original project: &apos;9.92_HBN-ManyToOne-mapping_live_class5&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     9.92_HBN-ManyToOne-mapping_live_class5/src/in.ineuron.main&#x0D;&#x0A;     9.92_HBN-ManyToOne-mapping_live_class5/src/in.ineuron.model" description="Delete elements" element1="/src&lt;in.ineuron.model" element2="/src&lt;in.ineuron.main" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1677394109729" subPackages="false" version="1.0"/>
+</session>

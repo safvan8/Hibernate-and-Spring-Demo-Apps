@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.durgasoft.pojo.Employee" table="emp1">
+		<!-- Since all the column names in DB table and Properties of pojo class 
+			have same name, specifying column attribute is optional -->
+		<id name="eno" />
+		<property name="ename" column="ENAME" />
+		<property name="esal" />
+		<property name="eaddr" />
+	</class>
+</hibernate-mapping>

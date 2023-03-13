@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SelectApp.java&apos; to &apos;9.98_ManyToOne-MappingDemo/src/in.ineuron.main&apos;&#x0D;&#x0A;- Original project: &apos;9.97_OneToMany-MappingDemo&apos;&#x0D;&#x0A;- Destination element: &apos;9.98_ManyToOne-MappingDemo/src/in.ineuron.main&apos;&#x0D;&#x0A;- Original element: &apos;in.ineuron.main.SelectApp.java&apos;" description="Copy compilation unit" destination="=9.98_ManyToOne-MappingDemo/src&lt;in.ineuron.main" element1="/src&lt;in.ineuron.main{SelectApp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1677738174453" units="1" version="1.0"/>
+</session>
