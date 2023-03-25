@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- For performing Dependency Injection to Spring for getting dataSource 
+		Bean Object -->
+	<bean id="mySqlDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+		abstract="true">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="username" value="root" />
+		<property name="password" value="Safvan@123" />
+	</bean>
+
+	<!-- configuring HikariCp Connection pooling by provideing impl for dataSource -->
+	<bean id="hikari" class="com.zaxxer.hikari.HikariDataSource"
+		parent="mySqlDataSource">
+		<property name="jdbcUrl"
+			value="jdbc:mysql://localhost:3306/springdemodbo" />
+		<property name="minimumIdle" value="10" />
+		<property name="maximumPoolSize" value="20" />
+		<property name="connectionTimeout" value="2000" />
+
+	</bean>
+
+	<!-- For Performing Dependency injection to DAO ** Injecting dataSoures 
+		Object from the SpringFrame work to DAo -->
+	<bean id="mySqlDaoImpl"
+		class="in.ineuron.dao.CustomerMySQLDAOImpl">
+		<constructor-arg name="dataSource" ref="hikari" />
+	</bean>
+
+</beans>
