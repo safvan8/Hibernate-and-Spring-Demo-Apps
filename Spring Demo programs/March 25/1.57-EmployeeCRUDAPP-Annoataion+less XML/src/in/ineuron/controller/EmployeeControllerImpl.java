@@ -17,6 +17,14 @@ public class EmployeeControllerImpl implements IEmployeeController {
 	@Autowired
 	private IEmployeeService service;
 
+	static {
+		System.out.println("EmployeeControllerImpl.class file is loading..............");
+	}
+	public EmployeeControllerImpl()
+	{
+		System.out.println("EmployeeControllerImpl Zero param constructor..............");
+	}
+	
 	@Override
 	public String save(EmployeeVO vo) {
 		
@@ -29,6 +37,7 @@ public class EmployeeControllerImpl implements IEmployeeController {
 		
 		return service.save(dto);
 	}
+	
 
 	@Override
 	public List<EmployeeVO> findAllEmployees() {
@@ -53,10 +62,12 @@ public class EmployeeControllerImpl implements IEmployeeController {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	
 
 	@Override
 	public String toString() {
 		return "EmployeeControllerImpl [service=" + service + "]";
 	}
-
+	
 }

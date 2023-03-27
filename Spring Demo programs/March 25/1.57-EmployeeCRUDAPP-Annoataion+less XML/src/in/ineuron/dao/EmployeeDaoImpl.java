@@ -17,10 +17,19 @@ import in.ineuron.bo.EmployeeBO;
 public class EmployeeDaoImpl implements IEmployeeDao
 {
 	private static final String INSERT_QUERY = "INSERT INTO springdemodbo.employee VALUES (?,?,?)";
+	
 	@Autowired
 	@Qualifier("hikariDataSource")
 	private DataSource dataSource;
 
+	static {
+		System.out.println("EmployeeDaoImpl.class file is loading..............");
+	}
+	public EmployeeDaoImpl()
+	{
+		System.out.println("EmployeeDaoImpl Zero param constructor..............");
+	}
+	
 	@Override
 	public String save(EmployeeBO bo)
 	{

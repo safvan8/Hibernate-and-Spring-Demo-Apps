@@ -15,6 +15,15 @@ public class EmployeeServiceImpl implements IEmployeeService
 
 	@Autowired
 	private IEmployeeDao dao;
+	static
+	{
+		System.out.println("EmployeeServiceImpl.class file is loading..............");
+	}
+
+	public EmployeeServiceImpl()
+	{
+		System.out.println("EmployeeServiceImpl Zero param constructor..............");
+	}
 
 	@Override
 	public String save(EmployeeDTO dto)
