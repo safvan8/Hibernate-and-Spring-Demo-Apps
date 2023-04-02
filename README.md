@@ -1,4 +1,4 @@
-# Hibernate and Spring Demo Programs
+# Hibernate and Spring Demo Apps
 
 This repository contains demo programs for Hibernate and Spring, written in Java. It includes simple examples to help you get started with Hibernate and Spring.
 
